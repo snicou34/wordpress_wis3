@@ -1,11 +1,10 @@
 <?php
 
-/*
 function lazuli_custom_post_types() {
 	$cpt = array(
 		'labels'              => array(
-			'name'          => __( 'CPT', 'lazuli' ),
-			'singular_name' => __( 'CPT', 'lazuli' ),
+			'name'          => __( 'Etablissements', 'lazuli' ),
+			'singular_name' => __( 'Etablissement', 'lazuli' ),
 		),
 		'show_ui'             => true,
 		'show_admin_column'   => true,
@@ -14,13 +13,12 @@ function lazuli_custom_post_types() {
 		'public'              => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
-		'rewrite'             => array( 'slug' => 'models', 'with_front' => true ),
+		'rewrite'             => array( 'slug' => 'etablissement', 'with_front' => true ),
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'excerpt' ),
 		'menu_icon'           => 'dashicons-welcome-learn-more',
 	);
 
-	register_post_type( 'lazuli_cpt', $cpt );
+	register_post_type( 'etablissement', $cpt );
 }
 
 add_action( 'init', 'lazuli_custom_post_types' );
-*/
