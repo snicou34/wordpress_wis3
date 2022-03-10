@@ -1,41 +1,8 @@
 <footer id="footer" class="site-footer" role="contentinfo">
-    <div class="container">
-
-        <div class="widgets-wrapper">
-            <div class="row g-4">
-                <?php if (is_active_sidebar('sidebar-footer-1')): ?>
-                    <div class="col-md-6 col-lg-3">
-                        <?php dynamic_sidebar('sidebar-footer-1'); ?>
-                    </div>
-                <?php endif ?>
-                <?php if (is_active_sidebar('sidebar-footer-2')): ?>
-                    <div class="col-md-6 col-lg-3">
-                        <?php dynamic_sidebar('sidebar-footer-2'); ?>
-                    </div>
-                <?php endif ?>
-                <?php if (is_active_sidebar('sidebar-footer-3')): ?>
-                    <div class="col-md-6 col-lg-3">
-                        <?php dynamic_sidebar('sidebar-footer-3'); ?>
-                    </div>
-                <?php endif ?>
-                <?php if (is_active_sidebar('sidebar-footer-4')): ?>
-                    <div class="col-md-6 col-lg-3">
-                        <?php dynamic_sidebar('sidebar-footer-4'); ?>
-                    </div>
-                <?php endif ?>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); position: ;">
+                © 2022 Copyright:
+                <a class="text-white" href="http://localhost:8888/wordpress_wis3/">Do nut eat</a>
             </div>
-        </div>
-
-        <div class="copyright-wrapper">
-            <span class="copyright">
-                &copy;
-                <?php echo date('Y'); ?>
-                <?php bloginfo('name'); ?>
-            </span>
-            <div class="menu-wrapper">
-                <?php wp_nav_menu(array('theme_location' => 'footer_legal')); ?>
-            </div>
-        </div>
-
-    </div>
+            <!-- Copyright -->
 </footer><!-- #colophon -->

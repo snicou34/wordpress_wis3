@@ -4,7 +4,7 @@
  * Add Google Map API Key
  */
 function lazuli_acf_init() {
-	acf_update_setting( 'google_api_key', 'YOUR_API_KEY' );
+	acf_update_setting( 'google_api_key', 'AIzaSyAnQWW7IAZlnEgCffRa5Kr2DixRXgwgfqQ' );
 }
 
 add_action( 'acf/init', 'lazuli_acf_init' );
