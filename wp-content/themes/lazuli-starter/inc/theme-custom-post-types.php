@@ -1,10 +1,10 @@
 <?php
 
-function etablissement_custom_post_types() {
+function donuteat_custom_post_types() {
 	$cpt = array(
 		'labels'              => array(
-			'name'          => __( 'Etablissements', 'lazuli' ),
-			'singular_name' => __( 'Etablissement', 'lazuli' ),
+			'name'          => __( 'Etablissements', 'donuteat' ),
+			'singular_name' => __( 'Etablissement', 'donuteat' ),
 		),
 		'show_ui'             => true,
 		'show_admin_column'   => true,
@@ -19,16 +19,12 @@ function etablissement_custom_post_types() {
 	);
 
 	register_post_type( 'etablissement', $cpt );
-}
 
-add_action( 'init', 'etablissement_custom_post_types' );
-
-function recrutement_custom_post_types() {
     $cpt = array(
-        'labels'              => array(
-            'name'          => __( 'Recrutements', 'lazuli' ),
-            'singular_name' => __( 'Recrutement', 'lazuli' ),
-        ),
+    'labels'              => array(
+        'name'          => __( 'Recrutements', 'donuteat' ),
+        'singular_name' => __( 'Recrutement', 'donuteat' ),
+    ),
         'show_ui'             => true,
         'show_admin_column'   => true,
         'show_in_rest'        => true,
@@ -44,4 +40,4 @@ function recrutement_custom_post_types() {
     register_post_type( 'recrutement', $cpt );
 }
 
-add_action( 'init', 'recrutement_custom_post_types' );
+add_action( 'init', 'donuteat_custom_post_types' );
