@@ -13,7 +13,7 @@ function donuteat_custom_post_types() {
 		'public'              => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
-		'rewrite'             => array( 'slug' => 'etablissement', 'with_front' => true ),
+		'rewrite'             => array( 'slug' => 'etablissements', 'with_front' => true ),
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'page-attributes', 'excerpt' ),
 		'menu_icon'           => 'dashicons-store',
 	);
