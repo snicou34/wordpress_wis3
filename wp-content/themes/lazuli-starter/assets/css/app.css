@@ -9960,6 +9960,37 @@ body {
   overflow-x: hidden;
 }
 
+.card {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.card-title {
+  color: #000000;
+}
+
+.job-type {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.badge {
+  border: none;
+  border-radius: 5px;
+  background-color: #0d6efd;
+  color: #FFFFFF;
+  padding: 8px;
+}
+
+.btn-bts {
+  text-decoration: none;
+}
+
+.d-grid {
+  margin-top: 25px;
+}
+
 :is(.entry-content, .block-editor-block-list__layout).is-root-container {
   overflow-x: hidden;
   background-color: #F8FBFD;
