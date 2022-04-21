@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
 <?php $query = new WP_Query(array(
-    'post_type' => 'etablissement',
+    'post_type' => 'recrutement',
     'posts_per_page' => 10
 ));
 ?>
-    <section id="etablissement-grid">
+    <section id="recrutement-grid">
         <div class="container">
             <?php if ($query->have_posts()): ?>
                 <div class="row g-4">
                     <?php while ($query->have_posts()) : $query->the_post(); ?>
                         <div class="col-md-6 col-xl-4">
-                            <?php get_template_part('template-parts/etablissement'); ?>
+                            <?php get_template_part('template-parts/recrutement'); ?>
                         </div>
                     <?php endwhile;
                     wp_reset_postdata(); ?>
