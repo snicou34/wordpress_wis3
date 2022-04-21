@@ -33,7 +33,7 @@
                                     <a class="btn-bts" href="#">
                                         <div class="d-grid gap-2 col-6 mx-auto">
 
-                                            <button class="btn btn-success" type="button">Postuler à cette offre</button>
+                                            <button class="btn btn-success" type="button">Je postule à cette offre</button>
                                         </div>
                                     </a>
 

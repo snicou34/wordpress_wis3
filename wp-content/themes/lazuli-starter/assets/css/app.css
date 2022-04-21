@@ -9960,6 +9960,12 @@ body {
   overflow-x: hidden;
 }
 
+.btn {
+  color: #FFFFFF;
+  background-color: #0d6efd;
+  border: none;
+}
+
 .card {
   border: none;
   border-radius: 10px;
@@ -9978,9 +9984,9 @@ body {
 .badge {
   border: none;
   border-radius: 5px;
-  background-color: #0d6efd;
+  background-color: #2ECC71;
   color: #FFFFFF;
-  padding: 8px;
+  padding: 6px;
 }
 
 .btn-bts {
