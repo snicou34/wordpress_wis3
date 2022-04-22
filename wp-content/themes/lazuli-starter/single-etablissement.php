@@ -14,39 +14,40 @@
         }
     </style>
 
-    <main id="main" class="site-main" role="main">
+    <section class="section">
+        <div class="container">
 
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
 
-                <h1 class="card-title font-weight-bold mb-4 mt-4" style="color: #E4BE46"><?php the_title(); ?></h1>
+                    <h1 class="card-title font-weight-bold mb-4 mt-4"><?php the_title(); ?></h1>
 
 
-                <div class="card mb-4 shadow-sm" style="border: none; padding: 15px; border-radius: 10px">
-                    <div class="card-body">
-                        <div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <div>
 
-                            <div class="row mt-3">
-                                <?php if ($image = get_field('image_etablissement')) : ?>
-                                <div class="image-etablissement img-fluid">
-                                <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
-                            </div>
-                            <?php endif; ?>
-
-                            <div class="mb-3">
-                                <li style="list-style-type: none; margin-top: 25px"><span
-                                    <?php if ($text = get_field('texte')) : ?>
-                                        <div class="texte">
-                                            <?php echo gettext($text); ?>
+                                <div class="row mt-3">
+                                    <?php if ($image = get_field('image_etablissement')) : ?>
+                                        <div class="image-etablissement img-fluid">
+                                            <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
                                         </div>
                                     <?php endif; ?>
 
-                                    <span class="badge badge-dark mr-2"
-                                          style="padding: 6px"> <?php if ($telephone = get_field('telephone')) : ?>
-                                            <div class="telephone">
+                                    <div class="mb-3">
+                                        <li style="list-style-type: none; margin-top: 25px"><span
+                                            <?php if ($text = get_field('texte')) : ?>
+                                                <div class="texte">
+                                                    <?php echo gettext($text); ?>
+                                                </div>
+                                            <?php endif; ?>
+
+                                            <span class="badge badge-dark mr-2"
+                                                  style="padding: 6px"> <?php if ($telephone = get_field('telephone')) : ?>
+                                                    <div class="telephone">
                                         <p> Numéro de téléphone de l'établissement: <?php echo gettext($telephone); ?></p>
                                         </div>
-                                        <?php endif; ?>
+                                                <?php endif; ?>
                                         <span class="badge badge-dark mr-2"><?php if ($adresse = get_field('adresse-etablissement.php')) : ?>
                                                 <div class="adresse">
                                         <p> Adresse: <?php echo gettext($adresse); ?> </p>
@@ -61,16 +62,14 @@
                                              data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
                                         </div>
                                         <?php endif; ?>
-                                </li>
+                                        </li>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
-
-
-    </main>
+    </section>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnQWW7IAZlnEgCffRa5Kr2DixRXgwgfqQ"></script>
     <script async type="text/javascript">
