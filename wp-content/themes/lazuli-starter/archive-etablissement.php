@@ -6,11 +6,7 @@
 ));
 ?>
     <section id="etablissement-grid">
-
-
-
-
-<?php if ($query->have_posts()): ?>
+        <?php if ($query->have_posts()): ?>
     <?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
             <div class="col">

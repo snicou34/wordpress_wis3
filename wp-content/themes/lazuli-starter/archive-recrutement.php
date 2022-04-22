@@ -6,20 +6,30 @@
 ));
 ?>
     <section id="recrutement-grid">
-        <div class="container">
-            <?php if ($query->have_posts()): ?>
-                <div class="row g-4">
-                    <?php while ($query->have_posts()) : $query->the_post(); ?>
-                        <div class="col-md-6 col-xl-4">
-                            <?php get_template_part('template-parts/recrutement'); ?>
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
+                    <div class="col">
+                        <div class="card shadow-sm" style="margin: 20px; border-radius: 5px">
+                            <?php if ($image = get_field('image-recrutement')) : ?>
+                                <div class="image-recrutement img-fluid">
+                                    <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
+                                </div>
+                            <?php endif; ?>
+                            <div class="card-body">
+                                <h5 class="card-title"><?php the_title(); ?></h5>
+                                <p class="card-text"> <?php the_field('text-recrutement'); ?> </p>
+                                <a href="<?php get_template_part('template-parts/recrutement'); ?>" class="btn btn-primary">Voir l'offre</a>
+                            </div>
                         </div>
-                    <?php endwhile;
-                    wp_reset_postdata(); ?>
+                    </div>
                 </div>
-                <?php get_template_part('template-parts/pagination'); ?>
-            <?php endif; ?>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
 
-        </div>
+            <?php get_template_part('template-parts/pagination'); ?>
+        <?php endif; ?>
+
     </section>
 
 <?php get_footer();
