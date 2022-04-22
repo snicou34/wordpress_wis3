@@ -18,8 +18,10 @@
                             <?php endif; ?>
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                <p class="card-text"> <?php the_field('text-recrutement'); ?> </p>
-                                <a href="<?php get_template_part('template-parts/recrutement'); ?>" class="btn btn-primary">Voir l'offre</a>
+                                <p class="card-text"><?php the_field('texte-recrutement', get_the_ID()); ?> </p>
+                                <div class="btn btn-primary">
+                                    <a href="<?php get_template_part('template-parts/recrutement');?>"> Voir l'offre</a>
+                                </div>
                             </div>
                         </div>
                     </div>

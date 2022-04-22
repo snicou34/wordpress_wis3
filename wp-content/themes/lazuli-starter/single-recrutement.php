@@ -22,9 +22,9 @@
                                         <?php endif; ?>
 
                                         <div class="mb-3">
-                                            <li class="job-type"><span <?php the_post_thumbnail(); ?>>Type de poste : <?php the_field('job-recrutement'); ?></span>, Bac+3
+                                            <li class="job-type"><span <?php the_post_thumbnail(); ?>>Type de poste : <?php the_field('job-recrutement'); ?></span>
                                                 <h5 class="mt-3 mb-2">Description du poste :</h5>
-                                                <p><?php the_field('text-recrutement'); ?></p>
+                                                <p><?php the_field('texte-recrutement'); ?></p>
                                                 <span class="badge badge-dark mr-2">Lieu du poste : <strong><?php the_field('city-recrutement');?></strong></span>
                                             </li>
                                         </div>
@@ -33,7 +33,7 @@
                                     <a class="btn-bts" href="#">
                                         <div class="d-grid gap-2 col-6 mx-auto">
 
-                                            <button class="btn btn-success" type="button">Je postule à cette offre</button>
+                                            <button class="btn btn-success" type="button">Postuler à cette offre</button>
                                         </div>
                                     </a>
 
